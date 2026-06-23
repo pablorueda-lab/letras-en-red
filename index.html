@@ -965,9 +965,10 @@ document.addEventListener('DOMContentLoaded', function(){
         var etiqueta = enlaces.length > 1 ? 'Leer texto ' + (idx+1) + ' ↗' : 'Leer texto ↗';
         enlacesHTML += '<a class="obra-link-drive" style="display:block;" href="' + url + '" target="_blank" rel="noopener">' + etiqueta + '</a>';
       });
-    } else if(enlaces.length > 1){
-      enlaces.slice(1).forEach(function(url, idx){
-        enlacesHTML += '<a class="obra-link-drive" style="display:block;" href="' + url + '" target="_blank" rel="noopener">Ver parte ' + (idx+2) + ' ↗</a>';
+    } else {
+      enlaces.forEach(function(url, idx){
+        var etiqueta = enlaces.length > 1 ? 'Ver parte ' + (idx+1) + ' ↗' : 'Ver enlace original ↗';
+        enlacesHTML += '<a class="obra-link-drive" style="display:block;" href="' + url + '" target="_blank" rel="noopener">' + etiqueta + '</a>';
       });
     }
 
