@@ -213,6 +213,31 @@
     transition:opacity .4s ease, transform .4s ease;
   }
   .obra-card.oculta{display:none;}
+  .obra-thumb.video-embed{
+    height:auto;
+    padding:0;
+    position:relative;
+    aspect-ratio:16/9;
+    background:#1a1a1a;
+  }
+  .obra-thumb.video-embed.vertical{
+    aspect-ratio:9/16;
+    max-width:220px;
+    margin:0 auto;
+  }
+  .obra-thumb.video-embed iframe{
+    position:absolute; top:0; left:0;
+    width:100%; height:100%;
+    border:0;
+  }
+  .obra-link-drive{
+    display:inline-block;
+    margin-top:8px;
+    font-size:0.82rem;
+    font-family:'Space Mono',monospace;
+    color:var(--selva);
+    text-decoration:underline;
+  }
   .obra-thumb{
     height:140px;
     display:flex;align-items:center;justify-content:center;
@@ -373,171 +398,7 @@
   </div>
 </section>
 
-<section id="bloque-5-6" class="bloque-section">
-  <div class="section-pad" style="padding-top:80px;padding-bottom:80px;">
-    <div class="section-head reveal">
-      <span class="eyebrow">Bloque N.02 · Muestra</span>
-      <h2>5° y 6° — Entre la fábula y el primer ensayo</h2>
-      <p>Una muestra de cómo se vería este bloque con producciones reales de los estudiantes.</p>
-    </div>
-
-    <div class="categorias reveal">
-      <span class="cat-pill activo" data-filter="todos">Todos</span>
-      <span class="cat-pill" data-filter="literario">Literario</span>
-      <span class="cat-pill" data-filter="expositivo">Textos expositivos</span>
-      <span class="cat-pill" data-filter="audiovisual">Audiovisual</span>
-      <span class="cat-pill" data-filter="manualidad">Manualidades</span>
-    </div>
-
-    <div class="obra-grid reveal">
-
-      <div class="obra-card" data-cat="literario">
-        <div class="obra-thumb literario">📖</div>
-        <div class="obra-body">
-          <div class="obra-cat">Literario · Cuento</div>
-          <div class="obra-title">El Mohán del río dormido</div>
-          <div class="obra-meta">Estudiante de muestra · 6°B</div>
-          <div class="obra-desc">Relato inspirado en la leyenda regional, escrito para la unidad de narrativa.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="expositivo">
-        <div class="obra-thumb expositivo">📰</div>
-        <div class="obra-body">
-          <div class="obra-cat">Expositivo · Artículo</div>
-          <div class="obra-title">¿Por qué reciclamos tan poco?</div>
-          <div class="obra-meta">Estudiante de muestra · 5°A</div>
-          <div class="obra-desc">Texto expositivo elaborado en la unidad de discurso persuasivo.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="audiovisual">
-        <div class="obra-thumb audiovisual">🎙️</div>
-        <div class="obra-body">
-          <div class="obra-cat">Audiovisual · Podcast</div>
-          <div class="obra-title">Voces de 6°: hablemos de bullying</div>
-          <div class="obra-meta">Equipo de muestra · 6°A</div>
-          <div class="obra-desc">Episodio corto grabado como cierre de la unidad de comunicación oral.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="manualidad">
-        <div class="obra-thumb manualidad">🏛️</div>
-        <div class="obra-body">
-          <div class="obra-cat">Manualidad · Diorama</div>
-          <div class="obra-title">La cueva de Alí Babá</div>
-          <div class="obra-meta">Estudiante de muestra · 5°B</div>
-          <div class="obra-desc">Maqueta elaborada para la unidad de "Alí Babá y los cuarenta ladrones".</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="literario">
-        <div class="obra-thumb literario">✒️</div>
-        <div class="obra-body">
-          <div class="obra-cat">Literario · Caligrama</div>
-          <div class="obra-title">Lluvia sobre Ibagué</div>
-          <div class="obra-meta">Estudiante de muestra · 6°B</div>
-          <div class="obra-desc">Caligrama elaborado en la unidad de poesía visual.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="audiovisual">
-        <div class="obra-thumb audiovisual">🎬</div>
-        <div class="obra-body">
-          <div class="obra-cat">Audiovisual · Video corto</div>
-          <div class="obra-title">3 razones para leer más</div>
-          <div class="obra-meta">Estudiante de muestra · 5°A</div>
-          <div class="obra-desc">Pieza persuasiva grabada en formato vertical para la unidad de publicidad.</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="bloque-7-9" class="bloque-section" style="background:#F1F0F1;">
-  <div class="section-pad" style="padding-top:80px;padding-bottom:80px;">
-    <div class="section-head reveal">
-      <span class="eyebrow">Bloque N.03 · Muestra</span>
-      <h2>7°, 8° y 9° — Voces propias, miradas críticas</h2>
-      <p>Una muestra de cómo se vería este bloque con producciones reales de los estudiantes.</p>
-    </div>
-
-    <div class="categorias reveal">
-      <span class="cat-pill activo" data-filter="todos">Todos</span>
-      <span class="cat-pill" data-filter="literario">Literario</span>
-      <span class="cat-pill" data-filter="expositivo">Textos expositivos</span>
-      <span class="cat-pill" data-filter="audiovisual">Audiovisual</span>
-      <span class="cat-pill" data-filter="manualidad">Manualidades</span>
-    </div>
-
-    <div class="obra-grid reveal">
-
-      <div class="obra-card" data-cat="expositivo">
-        <div class="obra-thumb expositivo">📰</div>
-        <div class="obra-body">
-          <div class="obra-cat">Expositivo · Ensayo argumentativo</div>
-          <div class="obra-title">El uso del celular en el aula: ¿ayuda o distrae?</div>
-          <div class="obra-meta">Estudiante de muestra · 8°A</div>
-          <div class="obra-desc">Ensayo elaborado en la unidad de discurso argumentativo.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="literario">
-        <div class="obra-thumb literario">📖</div>
-        <div class="obra-body">
-          <div class="obra-cat">Literario · Crónica</div>
-          <div class="obra-title">Un sábado de mercado en Ibagué</div>
-          <div class="obra-meta">Estudiante de muestra · 7°B</div>
-          <div class="obra-desc">Crónica costumbrista escrita para la unidad de géneros periodísticos.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="audiovisual">
-        <div class="obra-thumb audiovisual">🎙️</div>
-        <div class="obra-body">
-          <div class="obra-cat">Audiovisual · Podcast de opinión</div>
-          <div class="obra-title">¿Qué estamos leyendo en noveno?</div>
-          <div class="obra-meta">Equipo de muestra · 9°A</div>
-          <div class="obra-desc">Episodio grabado como producto final de la unidad de oralidad.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="manualidad">
-        <div class="obra-thumb manualidad">🗺️</div>
-        <div class="obra-body">
-          <div class="obra-cat">Manualidad · Línea de tiempo</div>
-          <div class="obra-title">El Tolima en la literatura colombiana</div>
-          <div class="obra-meta">Equipo de muestra · 7°A</div>
-          <div class="obra-desc">Proyecto visual elaborado para la unidad de contexto literario regional.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="literario">
-        <div class="obra-thumb literario">✒️</div>
-        <div class="obra-body">
-          <div class="obra-cat">Literario · Cuento breve</div>
-          <div class="obra-title">El último tren a Girardot</div>
-          <div class="obra-meta">Estudiante de muestra · 8°B</div>
-          <div class="obra-desc">Microcuento escrito en la unidad de narrativa breve.</div>
-        </div>
-      </div>
-
-      <div class="obra-card" data-cat="audiovisual">
-        <div class="obra-thumb audiovisual">🎬</div>
-        <div class="obra-body">
-          <div class="obra-cat">Audiovisual · Video persuasivo</div>
-          <div class="obra-title">Cuidemos el agua del Combeima</div>
-          <div class="obra-meta">Estudiante de muestra · 9°B</div>
-          <div class="obra-desc">Pieza audiovisual de la unidad de publicidad y propaganda.</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="bloque-3-4" class="bloque-section">
+<section id="bloque-3-4" class="bloque-section" style="background:#FFF3DE;">
   <div class="section-pad" style="padding-top:80px;padding-bottom:80px;">
     <div class="section-head reveal">
       <span class="eyebrow">Bloque N.01 · Muestra</span>
@@ -553,7 +414,7 @@
       <span class="cat-pill" data-filter="manualidad">Manualidades</span>
     </div>
 
-    <div class="obra-grid reveal">
+    <div class="obra-grid reveal" id="obra-grid-3-4">
 
       <div class="obra-card" data-cat="literario">
         <div class="obra-thumb literario">🦊</div>
@@ -619,6 +480,173 @@
   </div>
 </section>
 
+<section id="bloque-5-6" class="bloque-section">
+  <div class="section-pad" style="padding-top:80px;padding-bottom:80px;">
+    <div class="section-head reveal">
+      <span class="eyebrow">Bloque N.02 · Muestra</span>
+      <h2>5° y 6° — Entre la fábula y el primer ensayo</h2>
+      <p>Una muestra de cómo se vería este bloque con producciones reales de los estudiantes.</p>
+    </div>
+
+    <div class="categorias reveal">
+      <span class="cat-pill activo" data-filter="todos">Todos</span>
+      <span class="cat-pill" data-filter="literario">Literario</span>
+      <span class="cat-pill" data-filter="expositivo">Textos expositivos</span>
+      <span class="cat-pill" data-filter="audiovisual">Audiovisual</span>
+      <span class="cat-pill" data-filter="manualidad">Manualidades</span>
+    </div>
+
+    <div class="obra-grid reveal" id="obra-grid-5-6">
+
+      <div class="obra-card" data-cat="literario">
+        <div class="obra-thumb literario">📖</div>
+        <div class="obra-body">
+          <div class="obra-cat">Literario · Cuento</div>
+          <div class="obra-title">El Mohán del río dormido</div>
+          <div class="obra-meta">Estudiante de muestra · 6°B</div>
+          <div class="obra-desc">Relato inspirado en la leyenda regional, escrito para la unidad de narrativa.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="expositivo">
+        <div class="obra-thumb expositivo">📰</div>
+        <div class="obra-body">
+          <div class="obra-cat">Expositivo · Artículo</div>
+          <div class="obra-title">¿Por qué reciclamos tan poco?</div>
+          <div class="obra-meta">Estudiante de muestra · 5°A</div>
+          <div class="obra-desc">Texto expositivo elaborado en la unidad de discurso persuasivo.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="audiovisual">
+        <div class="obra-thumb video-embed vertical">
+          <iframe src="https://www.canva.com/design/DAHEy40XJFw/qyBVmde7zpFKWajx9P4JUw/watch?embed" allow="fullscreen" allowfullscreen="allowfullscreen" loading="lazy"></iframe>
+        </div>
+        <div class="obra-body">
+          <div class="obra-cat">Audiovisual · Video persuasivo</div>
+          <div class="obra-title">Vidas que merecen ser vistas</div>
+          <div class="obra-meta">Samuel Palacios Díaz · 6°</div>
+          <div class="obra-desc">"Los niños de la calle no tienen las mismas oportunidades, no son solo una estadística, son vidas con sueños que merecen ser vistas y valoradas."</div>
+          <a class="obra-link-drive" href="https://www.canva.com/design/DAHEy40XJFw/qyBVmde7zpFKWajx9P4JUw/watch" target="_blank" rel="noopener">Ver en Canva ↗</a>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="manualidad">
+        <div class="obra-thumb manualidad">🏛️</div>
+        <div class="obra-body">
+          <div class="obra-cat">Manualidad · Diorama</div>
+          <div class="obra-title">La cueva de Alí Babá</div>
+          <div class="obra-meta">Estudiante de muestra · 5°B</div>
+          <div class="obra-desc">Maqueta elaborada para la unidad de "Alí Babá y los cuarenta ladrones".</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="literario">
+        <div class="obra-thumb literario">✒️</div>
+        <div class="obra-body">
+          <div class="obra-cat">Literario · Caligrama</div>
+          <div class="obra-title">Lluvia sobre Ibagué</div>
+          <div class="obra-meta">Estudiante de muestra · 6°B</div>
+          <div class="obra-desc">Caligrama elaborado en la unidad de poesía visual.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="audiovisual">
+        <div class="obra-thumb audiovisual">🎬</div>
+        <div class="obra-body">
+          <div class="obra-cat">Audiovisual · Video corto</div>
+          <div class="obra-title">3 razones para leer más</div>
+          <div class="obra-meta">Estudiante de muestra · 5°A</div>
+          <div class="obra-desc">Pieza persuasiva grabada en formato vertical para la unidad de publicidad.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="bloque-7-9" class="bloque-section" style="background:#F1F0F1;">
+  <div class="section-pad" style="padding-top:80px;padding-bottom:80px;">
+    <div class="section-head reveal">
+      <span class="eyebrow">Bloque N.03 · Muestra</span>
+      <h2>7°, 8° y 9° — Voces propias, miradas críticas</h2>
+      <p>Una muestra de cómo se vería este bloque con producciones reales de los estudiantes.</p>
+    </div>
+
+    <div class="categorias reveal">
+      <span class="cat-pill activo" data-filter="todos">Todos</span>
+      <span class="cat-pill" data-filter="literario">Literario</span>
+      <span class="cat-pill" data-filter="expositivo">Textos expositivos</span>
+      <span class="cat-pill" data-filter="audiovisual">Audiovisual</span>
+      <span class="cat-pill" data-filter="manualidad">Manualidades</span>
+    </div>
+
+    <div class="obra-grid reveal" id="obra-grid-7-9">
+
+      <div class="obra-card" data-cat="expositivo">
+        <div class="obra-thumb expositivo">📰</div>
+        <div class="obra-body">
+          <div class="obra-cat">Expositivo · Ensayo argumentativo</div>
+          <div class="obra-title">El uso del celular en el aula: ¿ayuda o distrae?</div>
+          <div class="obra-meta">Estudiante de muestra · 8°A</div>
+          <div class="obra-desc">Ensayo elaborado en la unidad de discurso argumentativo.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="literario">
+        <div class="obra-thumb literario">📖</div>
+        <div class="obra-body">
+          <div class="obra-cat">Literario · Crónica</div>
+          <div class="obra-title">Un sábado de mercado en Ibagué</div>
+          <div class="obra-meta">Estudiante de muestra · 7°B</div>
+          <div class="obra-desc">Crónica costumbrista escrita para la unidad de géneros periodísticos.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="audiovisual">
+        <div class="obra-thumb audiovisual">🎙️</div>
+        <div class="obra-body">
+          <div class="obra-cat">Audiovisual · Podcast de opinión</div>
+          <div class="obra-title">¿Qué estamos leyendo en noveno?</div>
+          <div class="obra-meta">Equipo de muestra · 9°A</div>
+          <div class="obra-desc">Episodio grabado como producto final de la unidad de oralidad.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="manualidad">
+        <div class="obra-thumb manualidad">🗺️</div>
+        <div class="obra-body">
+          <div class="obra-cat">Manualidad · Línea de tiempo</div>
+          <div class="obra-title">El Tolima en la literatura colombiana</div>
+          <div class="obra-meta">Equipo de muestra · 7°A</div>
+          <div class="obra-desc">Proyecto visual elaborado para la unidad de contexto literario regional.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="literario">
+        <div class="obra-thumb literario">✒️</div>
+        <div class="obra-body">
+          <div class="obra-cat">Literario · Cuento breve</div>
+          <div class="obra-title">El último tren a Girardot</div>
+          <div class="obra-meta">Estudiante de muestra · 8°B</div>
+          <div class="obra-desc">Microcuento escrito en la unidad de narrativa breve.</div>
+        </div>
+      </div>
+
+      <div class="obra-card" data-cat="audiovisual">
+        <div class="obra-thumb audiovisual">🎬</div>
+        <div class="obra-body">
+          <div class="obra-cat">Audiovisual · Video persuasivo</div>
+          <div class="obra-title">Cuidemos el agua del Combeima</div>
+          <div class="obra-meta">Estudiante de muestra · 9°B</div>
+          <div class="obra-desc">Pieza audiovisual de la unidad de publicidad y propaganda.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="bloque-10-11" class="bloque-section" style="background:#232325; color:#FAFAFA;">
   <div class="section-pad" style="padding-top:80px;padding-bottom:80px;">
     <div class="section-head reveal">
@@ -635,7 +663,7 @@
       <span class="cat-pill" data-filter="manualidad">Manualidades</span>
     </div>
 
-    <div class="obra-grid reveal">
+    <div class="obra-grid reveal" id="obra-grid-10-11">
 
       <div class="obra-card" data-cat="literario">
         <div class="obra-thumb literario">✒️</div>
@@ -779,16 +807,15 @@ document.addEventListener('DOMContentLoaded', function(){
   }, {threshold:0.15});
   reveals.forEach(function(el){ observer.observe(el); });
 
-  // ---- Filtro de categorías (independiente por bloque) ----
+  // ---- Filtro de categorías (independiente por bloque, incluye tarjetas cargadas dinámicamente) ----
   document.querySelectorAll('.bloque-section').forEach(function(section){
     var pills = section.querySelectorAll('.cat-pill');
-    var cards = section.querySelectorAll('.obra-card');
     pills.forEach(function(pill){
       pill.addEventListener('click', function(){
         pills.forEach(function(p){ p.classList.remove('activo'); });
         pill.classList.add('activo');
         var filtro = pill.getAttribute('data-filter');
-        cards.forEach(function(card){
+        section.querySelectorAll('.obra-card').forEach(function(card){
           if(filtro === 'todos' || card.getAttribute('data-cat') === filtro){
             card.classList.remove('oculta');
           } else {
@@ -842,6 +869,134 @@ document.addEventListener('DOMContentLoaded', function(){
       var copyMsg = document.getElementById('copy-msg');
       copyMsg.classList.add('visible');
     });
+  }
+
+  // ---- Contenido publicado desde Google Sheets (formulario de docentes) ----
+  var SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTX8wT-1nXSZFg1_fK9igNA5h0cGJOHWgqRaP43P1ZkdJSgi1TEw3XpHyIz20RJIdJKYMzySgGi-azr/pub?gid=319247081&single=true&output=csv';
+
+  // Parser de CSV sencillo (soporta comillas, comas y saltos de línea dentro de campos)
+  function parseCSV(text){
+    var rows = [];
+    var row = [];
+    var field = '';
+    var inQuotes = false;
+    for(var i=0; i<text.length; i++){
+      var c = text[i];
+      if(inQuotes){
+        if(c === '"'){
+          if(text[i+1] === '"'){ field += '"'; i++; }
+          else { inQuotes = false; }
+        } else {
+          field += c;
+        }
+      } else {
+        if(c === '"'){ inQuotes = true; }
+        else if(c === ','){ row.push(field); field = ''; }
+        else if(c === '\r'){ /* ignorar */ }
+        else if(c === '\n'){ row.push(field); rows.push(row); row = []; field = ''; }
+        else { field += c; }
+      }
+    }
+    if(field.length > 0 || row.length > 0){ row.push(field); rows.push(row); }
+    return rows;
+  }
+
+  function csvToObjetos(text){
+    var filas = parseCSV(text).filter(function(r){ return r.length > 1 || (r[0] && r[0].trim() !== ''); });
+    if(filas.length < 2) return [];
+    var encabezados = filas[0].map(function(h){ return h.trim(); });
+    return filas.slice(1).map(function(fila){
+      var obj = {};
+      encabezados.forEach(function(h, idx){ obj[h] = (fila[idx] || '').trim(); });
+      return obj;
+    });
+  }
+
+  function detectarBloqueId(textoBloque){
+    var t = (textoBloque || '');
+    if(t.indexOf('10') !== -1 || t.indexOf('11') !== -1) return 'obra-grid-10-11';
+    if(t.indexOf('7') !== -1 || t.indexOf('8') !== -1 || t.indexOf('9') !== -1) return 'obra-grid-7-9';
+    if(t.indexOf('5') !== -1 || t.indexOf('6') !== -1) return 'obra-grid-5-6';
+    if(t.indexOf('3') !== -1 || t.indexOf('4') !== -1) return 'obra-grid-3-4';
+    return null;
+  }
+
+  function detectarCategoria(textoCategoria){
+    var t = (textoCategoria || '').toLowerCase();
+    if(t.indexOf('liter') !== -1) return 'literario';
+    if(t.indexOf('exposit') !== -1) return 'expositivo';
+    if(t.indexOf('audiovis') !== -1) return 'audiovisual';
+    if(t.indexOf('manualidad') !== -1) return 'manualidad';
+    return 'literario';
+  }
+
+  var ICONOS_CAT = {literario:'📖', expositivo:'📰', audiovisual:'🎬', manualidad:'🏛️'};
+
+  function esImagenDirecta(url){
+    return /\.(jpe?g|png|gif|webp)(\?.*)?$/i.test(url);
+  }
+
+  function construirTarjeta(fila){
+    var bloqueId = detectarBloqueId(fila['Bloque']);
+    if(!bloqueId) return null;
+    var contenedor = document.getElementById(bloqueId);
+    if(!contenedor) return null;
+
+    var catSlug = detectarCategoria(fila['Categoría']);
+    var tipo = (fila['Tipo de contenido'] || '').toLowerCase();
+    var enlaces = (fila['Enlace(s)'] || '').split('\n').map(function(s){ return s.trim(); }).filter(Boolean);
+    var titulo = fila['Título del trabajo'] || 'Trabajo sin título';
+    var autor = fila['Autor(es) y grado'] || '';
+    var descripcion = fila['Descripción breve'] || '';
+    var esSoloTexto = tipo.indexOf('texto') !== -1;
+
+    var thumbHTML;
+    if(esSoloTexto || enlaces.length === 0){
+      thumbHTML = '<div class="obra-thumb ' + catSlug + '">' + (ICONOS_CAT[catSlug] || '📄') + '</div>';
+    } else if(esImagenDirecta(enlaces[0])){
+      thumbHTML = '<div class="obra-thumb video-embed"><img src="' + enlaces[0] + '" style="width:100%;height:100%;object-fit:cover;" loading="lazy" alt=""></div>';
+    } else {
+      thumbHTML = '<div class="obra-thumb video-embed"><iframe src="' + enlaces[0] + '" allow="fullscreen" allowfullscreen loading="lazy"></iframe></div>';
+    }
+
+    var enlacesHTML = '';
+    if(esSoloTexto){
+      enlaces.forEach(function(url, idx){
+        var etiqueta = enlaces.length > 1 ? 'Leer texto ' + (idx+1) + ' ↗' : 'Leer texto ↗';
+        enlacesHTML += '<a class="obra-link-drive" style="display:block;" href="' + url + '" target="_blank" rel="noopener">' + etiqueta + '</a>';
+      });
+    } else if(enlaces.length > 1){
+      enlaces.slice(1).forEach(function(url, idx){
+        enlacesHTML += '<a class="obra-link-drive" style="display:block;" href="' + url + '" target="_blank" rel="noopener">Ver parte ' + (idx+2) + ' ↗</a>';
+      });
+    }
+
+    var div = document.createElement('div');
+    div.className = 'obra-card';
+    div.setAttribute('data-cat', catSlug);
+    div.innerHTML =
+      thumbHTML +
+      '<div class="obra-body">' +
+        '<div class="obra-cat">' + (fila['Categoría'] || '') + '</div>' +
+        '<div class="obra-title">' + titulo + '</div>' +
+        '<div class="obra-meta">' + autor + '</div>' +
+        '<div class="obra-desc">' + descripcion + '</div>' +
+        enlacesHTML +
+      '</div>';
+
+    contenedor.appendChild(div);
+  }
+
+  if(SHEET_CSV_URL.indexOf('TU_ENLACE') === -1){
+    fetch(SHEET_CSV_URL)
+      .then(function(r){ return r.text(); })
+      .then(function(texto){
+        var filas = csvToObjetos(texto);
+        filas.forEach(construirTarjeta);
+      })
+      .catch(function(err){
+        console.warn('No se pudo cargar el contenido publicado desde Google Sheets:', err);
+      });
   }
 
   // ---- Red de hilos animada (hero) ----
