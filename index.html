@@ -932,6 +932,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var ICONOS_CAT = {literario:'📖', expositivo:'📰', audiovisual:'🎬', manualidad:'🏛️'};
 
+  // Extrae enlaces reales sin importar si el docente pegó solo la URL
+  // o el bloque de código completo que dan Canva/Drive al "Insertar".
+  function extraerEnlaces(textoCrudo){
+    var texto = textoCrudo || '';
+    // 1) Si hay etiquetas <iframe src="...">, esos son los enlaces reales que importan.
+    var iframesEncontrados = texto.match(/<iframe[^>]*src=["']([^"']+)["'][^>]*>/gi);
+    if(iframesEncontrados && iframesEncontrados.length > 0){
+      return iframesEncontrados.map(function(tag){
+        var m = tag.match(/src=["']([^"']+)["']/i);
+        return m ? m[1] : null;
+      }).filter(Boolean);
+    }
+    // 2) Si no hay iframe, se asume texto plano con un enlace por línea —
+    //    pero solo se aceptan líneas que de verdad empiecen como una URL.
+    return texto.split('\n').map(function(s){ return s.trim(); })
+      .filter(function(s){ return /^https?:\/\//i.test(s); });
+  }
+
   function esImagenDirecta(url){
     return /\.(jpe?g|png|gif|webp)(\?.*)?$/i.test(url);
   }
@@ -944,7 +962,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var catSlug = detectarCategoria(fila['Categoría']);
     var tipo = (fila['Tipo de contenido'] || '').toLowerCase();
-    var enlaces = (fila['Enlace(s)'] || '').split('\n').map(function(s){ return s.trim(); }).filter(Boolean);
+    var enlaces = extraerEnlaces(fila['Enlace(s)']);
     var titulo = fila['Título del trabajo'] || 'Trabajo sin título';
     var autor = fila['Autor(es) y grado'] || '';
     var descripcion = fila['Descripción breve'] || '';
